@@ -1,0 +1,106 @@
+Script started on Wed Feb 18 16:15:42 2026
+[?1034h[23bee044@mepcolinux pylab]$cat ex8_1.py
+def find(s,n):
+   if n in s:
+      print(n,"exists")
+   else:
+      print(n,"doesn't exists")
+s={int(i) for i in set(input("Enter value: ").split())}
+print("length: ",len(s))
+print("set: ",s)
+n=int(input("enter element to check: "))
+find(s,n)
+[23bee044@mepcolinux pylab]$echo;eco ho;
+
+
+[23bee044@mepcolinux pylab]$python3 ex8_2 1.py
+Enter value: 1 2 3 2 4 3 5
+length:  5
+set:  {1, 2, 3, 4, 5}
+enter element to check: 3
+3 exists
+[23bee044@mepcolinux pylab]$eh cho;echo;echo;
+
+
+
+[23bee044@mepcolinux pylab]$cat ex8_2.py
+def add(s,n):
+    s.add(n)
+    return s
+def delete(s,n):
+    s.remove(n)
+    return s
+l=[int(i) for i in list(input("Enter list: ").split())]
+print("Input List:",l)
+s=set(l)
+print("Set:",s)
+n=int(input("Enter element to add: "))
+s=add(s,n)
+print(s)
+n=int(input("Enter element to remove: "))
+s=delete(s,n)
+print(s)
+[23bee044@mepcolinux pylab]$echo
+
+[23bee044@mepcolinux pylab]$python3 ex8_2.py
+Enter list: 1 3 2 4 5 3 6 7 4 5 6
+Input List: [1, 3, 2, 4, 5, 3, 6, 7, 4, 5, 6]
+Set: {1, 2, 3, 4, 5, 6, 7}
+Enter element to add: 199
+{1, 2, 3, 4, 5, 6, 7, 199}
+Enter element to remove: 7
+{1, 2, 3, 4, 5, 6, 199}
+[23bee044@mepcolinux pylab]$echo;echo;echo;
+
+
+
+[23bee044@mepcolinux pylab]$cat ex8_3.py
+Set1={int(i) for i in set(input("Enter set 1: ").split())}
+Set2={int(i) for i in set(input("Enter set 2: ").split())}
+print("Interaction:",Set1.intersection(Set2))
+print("Union:",Set1.union(Set2))
+print("Difference:",Set1.difference(Set2))
+[23bee044@mepcolinux pylab]$echo
+
+[23bee044@mepcolinux pylab]$python3 ex8_3.py
+Enter set 1: 1
+Enter set 2: 2
+Interaction: set()
+Union: {1, 2}
+Difference: {1}
+[23bee044@mepcolinux pylab]$python3 ex8_3.py
+Enter set 1: 1 2 3 4 3 4 5 6       
+Enter set 2: 3 4 5 6
+Interaction: {3, 4}
+Union: {1, 2, 3, 4, 5, 6}
+Difference: {1, 2}
+[23bee044@mepcolinux pylab]$echo;echo;echo;
+
+
+
+[23bee044@mepcolinux pylab]$cat ex8_4.py
+Set1={int(i) for i in set(input("Enter set 1: ").split())}
+Set2={int(i) for i in set(input("Enter set 2: ").split())}
+if(Set1.issubset(Set2)==True):
+    print("S1 is subset of S2")
+elif(Set2.issubset(Set1)==True):
+    print("S2 is subset of S1")
+else:
+    print("There is no subsets on each set")
+[23bee044@mepcolinux pylab]$echo
+
+[23bee044@mepcolinux pylab]$python3 ex8_4.py
+Enter set 1: 1 2 3 4
+Enter set 2: 5 6
+There is no subsets on each set
+[23bee044@mepcolinux pylab]$python3 ex8_4.py
+Enter set 1: 1 2 3 4
+Enter set 2: 2 3
+S2 is subset of S1
+[23bee044@mepcolinux pylab]$python3 ex8_4.py
+Enter set 1: 2 3
+Enter set 2:  5236     7 6 2 3 4
+S1 is subset of S2
+[23bee044@mepcolinux pylab]$exit
+
+Script done on Wed Feb 18 16:19:55 2026

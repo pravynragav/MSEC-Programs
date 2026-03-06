@@ -1,0 +1,116 @@
+Script started on Tue Mar  3 22:51:45 2026
+[?1034h[23bee044@mepcolinux pylab]$cat ex9_1.py
+s = input("Enter a string: ")
+rev = s[::-1]
+length = len(s)
+print("Input string:", s)
+print("Reversed string:", rev)
+print("Length of the string:", length)
+[23bee044@mepcolinux pylab]$python3 ex9_1.py
+Enter a string: Hello
+Input string: Hello
+Reversed string: olleH
+Length of the string: 5
+[23bee044@mepcolinux pylab]$cat   echo
+
+[23bee044@mepcolinux pylab]$cat ex9_2.py
+s = input("Enter a string: ")
+u = 0
+l = 0
+for char in s:
+    if char.isupper():
+        u += 1
+    elif char.islower():
+        l += 1
+print("Uppercase letters:", u)
+print("Lowercase letters:", l)
+[23bee044@mepcolinux pylab]$python3 ex9_2.py
+Enter a string: HelloMottoSport
+Uppercase letters: 3
+Lowercase letters: 12
+[23bee044@mepcolinux pylab]$echo
+
+[23bee044@mepcolinux pylab]$cat ex9_3.py
+s = input("Enter a string: ")
+ans = {}
+for char in s:
+    if char in ans:
+        ans[char] += 1
+    else:
+        ans[char] = 1
+print(ans)
+[23bee044@mepcolinux pylab]$python3 p ex9_3.py
+Enter a string: aganagaagangayee
+{'a': 7, 'g': 4, 'n': 2, 'y': 1, 'e': 2}
+[23bee044@mepcolinux pylab]$echo
+
+[23bee044@mepcolinux pylab]$echopython3 ex9_3.py[4Pcat ex9_3.py[1P[1@4
+input_str = input("Enter two strings separated by a space: ")
+str1, str2 = input_str.split()
+new_str1 = str2[0:2] + str1[2:]
+new_str2 = str1[0:2] + str2[2:]
+ans = new_str1 + " " + new_str2
+print(ans)
+[23bee044@mepcolinux pylab]$cat ex9_4.py[8Pechopython3 ex9_3.py[1P[1@4
+Enter two strings separated by a space: vanakkam tamilnadu
+tanakkam vamilnadu
+[23bee044@mepcolinux pylab]$python3 ex9_4.py[4Pcat ex9_4.py[8Pecho
+
+[23bee044@mepcolinux pylab]$echopython3 ex9_4.py[4Pcat ex9_4.py[1P[1@5
+s = input("Enter a string: ")
+if len(s) >= 3:
+    if s.endswith("ing"):
+        s += "ly"
+    else:
+        s += "ing"
+print(s)
+[23bee044@mepcolinux pylab]$cat ex9_5.py[8Pechopython3 ex9_4.py[1P[1@5
+Enter a string: swim
+swiming
+[23bee044@mepcolinux pylab]$python3 ex9_5.py
+Enter a string: swimming
+swimmingly
+[23bee044@mepcolinux pylab]$python3 ex9_5.py
+Enter a string: sa
+sa
+[23bee044@mepcolinux pylab]$echo
+
+[23bee044@mepcolinux pylab]$echopython3 ex9_5.py[4Pcat ex9_5.py[1P[1@6
+s1=input("Enter a string1:")
+s2=input("Enter a string2:")
+print("Concatenated string:",s1+s2)
+[23bee044@mepcolinux pylab]$cat ex9_6.py[Kcat ex9_6.py[8Pechopython3 ex9_5.py[1P[1@6
+Enter a string1:pyt
+Enter a string2:hon
+Concatenated string: python
+[23bee044@mepcolinux pylab]$echo
+
+[23bee044@mepcolinux pylab]$echopython3 ex9_6.py[4Pcat ex9_6.py[1P[1@7
+s = input("Enter a string: ")
+alphabets = 0
+numbers = 0
+spaces = 0
+for char in s:
+    if char.isalpha():
+        alphabets += 1
+    elif char.isdigit():
+        numbers += 1
+    elif char.isspace():
+        spaces += 1
+print("Alphabets:", alphabets)
+print("Numbers:", numbers)
+print("Spaces:", spaces)
+[23bee044@mepcolinux pylab]$cat ex9_7.py[8Pechopython3 ex9_6.py[1P[1@7
+Enter a string: 1 l0v3 pyth0n
+Alphabets: 7
+Numbers: 4
+Spaces: 2
+[23bee044@mepcolinux pylab]$python3 ex9_7.py
+Enter a string: one 1 two 2 three 3
+Alphabets: 11
+Numbers: 3
+Spaces: 5
+[23bee044@mepcolinux pylab]$exit
+exit
+
+Script done on Tue Mar  3 22:57:59 2026

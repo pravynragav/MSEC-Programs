@@ -1,0 +1,10 @@
+print("Enter principle amount,rate of interest,years, times")
+p=float(input())
+r=float(input())
+t=float(input())
+n=float(input())
+si=((p*r*t)/100.0)
+amt=p*((1+(r/100)/n)**(n*t))
+ci= amt-p
+print(f"simple interest = {si}")
+print(f"compound interest = {ci}")
