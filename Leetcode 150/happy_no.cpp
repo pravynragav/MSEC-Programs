@@ -1,4 +1,4 @@
-SOLUTION = class Solution {
+class Solution {
 public:
     bool isHappy(int n) {
         unordered_set<int> seen;
