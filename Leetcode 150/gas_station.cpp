@@ -1,4 +1,4 @@
-SOLUTION = class Solution {
+class Solution {
 public:
    int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
        int total = 0, tank = 0, start = 0;
