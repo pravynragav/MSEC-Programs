@@ -7,17 +7,17 @@ Welcome to the MSEC Programs repository! This project is designed to provide a c
 ```
 MSEC-Programs/
 │
-├── algorithms/
-│   └── [algorithm-name]/
+├── Hackerrank/
+│   └── Python/
 │       ├── [file1].ext
 │       └── [file2].ext
 │
-├── data-structures/
+├── Leetcode 150/
 │   └── [data-structure-name]/
 │       ├── [file1].ext
 │       └── [file2].ext
 │
-├── examples/
+├── Pylab/
 │   ├── [example1].ext
 │   └── [example2].ext
 │
@@ -31,9 +31,9 @@ MSEC-Programs/
 
 ### Folder Descriptions
 
-- **algorithms/**: This directory contains implementations of various algorithms, organized by their respective names.
-- **data-structures/**: This section includes different data structure implementations, also organized by name.
-- **examples/**: Provides example usage of various programs to help users understand how to apply them in practice.
+- **Hackerrank/**: This directory contains implementations of various algorithms, organized by their respective names.
+- **Leetcode 150/**: This section includes different data structure implementations, also organized by name.
+- **Pylab/**: Provides example usage of various programs to help users understand how to apply them in practice.
 - **tests/**: Contains test cases for the algorithms and data structures to ensure correctness and reliability.
 - **README.md**: This file, containing the description of the repository.
 - **LICENSE**: The license document for the repository.
