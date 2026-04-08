@@ -18,6 +18,6 @@ MSEC-Programs/
 │   └── [data-structure]/  # Arrays, Strings, Hashmaps, Trees, etc.
 ├── 🐍 Hackerrank/       # Domain-specific algorithms & Python challenges
 ├── 🏫 Pylab/            # Academic lab implementations & examples
-├── 🧪 Neopad/            # Custom test cases for edge-case verification
+├── 🧪 IamNeo/            # Custom test cases for edge-case verification
 └── 📄 LICENSE           # MIT License
 ```
